@@ -210,9 +210,9 @@ document.addEventListener ("DOMContentLoaded", () => {
 
 		const productValues = {
 			title: elements.title.value,
-			count: elements.qty.value,
-			price: elements.price.value,
-			active: elements.active.checked,
+			count: +elements.qty.value,
+			price: +elements.price.value,
+			active: !!elements.active.checked,
 		};
 
 		products.push (
