@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Покупки</title>
+</head> 
+
+<body>
+	<div class="header">
+		<div class="container header__container">
+			<div class="result__sum">
+				<span class="result__value" data-result-sum="1">0</span>
+				<span class="currency">&#8381;</span>
+			</div>
+			<div class="result__count">
+				<span class="result__value" data-result-count="1">0</span>
+				<span class="result__unit">шт.</span>
+			</div>
+		</div>
+	</div>
+	<main class="main">
+		<div class="container">
+			<form action="#" class="products-add" method="POST" data-crud-add="">
+				<div class="products-add__group">
+					<label class="products-add__label">
+						<input type="text" placeholder="Название товара" name="title" required>
+					</label>
+				</div>
+				<div class="products-add__group">
+					<label class="products-add__label">
+						<input type="number" min="0" placeholder="Кол-во" name="qty" required>
+					</label>
+				</div>
+				<div class="products-add__group">
+					<label class="products-add__label">
+						<input type="number" min="0" placeholder="Цена за ед." name="price" required>
+					</label>
+				</div>
+				<div class="products-add__group">
+					<label class="products-add__label">
+						<input type="checkbox" name="active">
+						<span class="products-add__label-text">Активен</span>
+					</label>
+				</div>
+				<input type="submit" value="Добавить">
+			</form>
+			<ul class="products" data-products="1"></ul>
+		</div>
+	</main>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
